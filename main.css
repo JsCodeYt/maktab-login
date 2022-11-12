@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+.container {
+    background: linear-gradient(rgba(0,0,0,0.64), rgba(1,2,4,5.55)), url("./images/istockphoto-1333211562-612x612.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+.login {
+    background-color: #009688;
+    border-radius: 50px;
+    padding: 100px;
+    top: -100%;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.login-titles {
+    font-size: 20px;
+    color: #272729;
+    font-weight: 600;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-form input {
+    margin-top: 10px;
+    height: 40px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+.login-form button {
+    padding: 15px 100px;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #272729;
+    border: 1px solid #f9f9f9;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #272729;
+}
+
+.login-btn {
+    padding: 10px 40px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+}
+
+.login-btn:hover {
+    background-color: #009688;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    gap: 1rem;
+}
+
+/* navbar  */
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li {
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    background: #009688;
+    bottom: -10px;
+    transition: all 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
